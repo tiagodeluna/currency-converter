@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--Provides some responsiveness, giving the browser instructions on 
+        how to control the page's dimensions and scaling. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Currency Converter - A Frontend Developer Task</title>
+
+        <!-- Custom font and styles -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="header">
+        	<img src="img/currency-convertion.png" alt="Currency convertion image" />
+        	<h1>Luna Currency Converter</h1>
+        	<p>Simple currency converter developed by <a href="http://tiagodeluna.github.io" target="_blank">
+        	Tiago Luna</a> as part of the a coding test</p>
+        </div>
+
+		<!-- Error display -->
+        <section id="error-area">
+        	<h3>HTTP Status</h3>
+        	<p>Error message...</p>
+        </section>
+
+		<!-- Form elements -->
+        <section id="form-area">
+            <form id="conversion-form">
+            	<div class="form-element">
+	               	<label for="amount">Amount</label><br />
+	               	<input id="amount" type="text" maxlength="12"
+	               		pattern="^\d{0,12}(\.\d{0,6})?$" placeholder="e.g. 950.00" required>
+            	</div>
+                
+            	<div class="form-element">
+	               	<label for="source">Source currency</label><br />
+	               	<select id="source" required>
+	               		<option value="">Choose a currency</option>
+	               	</select>
+               	</div>
+                
+            	<div class="form-element">
+	               	<label for="target">Target currency</label><br />
+	               	<select id="target" required>
+	               		<option value="">Choose a currency</option>
+	               	</select>
+               </div>
+               
+               <div class="form-element">
+		           <span class="info">Result: <span id="result"></span></span>
+		           <button type="submit">CONVERT</button>
+               </div>
+
+            </form>
+        </section>
+        
+        <!-- 'Axios' library for making Ajax requests -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- JavaScript code for this page -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
