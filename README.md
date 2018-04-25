@@ -21,9 +21,9 @@ To allow easy testing, the Java API was built as a standalone application (with 
 
 # Solution Details
 
-Author: Tiago Luna
-Job position: Full Stack Developer
-Date: Oct 22th, 2017
+- Author: Tiago Luna
+- Job position: Full Stack Developer
+- Date: Oct 22th, 2017
 
 Please check my kanban board for this solution: [Kanban-Chi Board](https://drive.google.com/file/d/0Bze55yZhXWExUTFMZTJGRVhXZlk/view?usp=sharing)
 
